@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Admin Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f1f3f6; }
+        
+        /* Flipkart Blue Header */
+        .navbar { background-color: #2874f0; padding: 10px 50px; color: white; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; font-style: italic; }
+        .back-btn { background: #ff9f00; border: none; padding: 8px 20px; color: white; font-weight: bold; border-radius: 2px; cursor: pointer; }
+
+        .container { display: flex; padding: 20px; gap: 20px; }
+        
+        /* Stats Cards */
+        .dashboard-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 100%; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .card h3 { color: #878787; font-size: 14px; text-transform: uppercase; margin-bottom: 10px; }
+        .card p { font-size: 32px; font-weight: bold; color: #212121; }
+        .status-ok { color: #388e3c !important; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Flipkart <span style="color: #ffe500;">Admin</span></div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back to ChatOps</button>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Total Orders (Today)</h3>
+                <p>12,450</p>
+            </div>
+            <div class="card">
+                <h3>Server Health</h3>
+                <p class="status-ok">99.2%</p>
+            </div>
+            <div class="card">
+                <h3>Active Users</h3>
+                <p>4,821</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
